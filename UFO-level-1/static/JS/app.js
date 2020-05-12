@@ -1,21 +1,21 @@
-// From (data.js)
-var tableData = data;
+  // From (data.js)
+  var tableData = data;
 
-// d3.select button
-var button = d3.select("button");
+  // d3.select button
+  var button = d3.select("button");
 
-// d3.select form-control
-var form = d3.select("#form-control");
+  // d3.select form-control
+  var form = d3.select("#form-control");
 
-// d3.select the tableBody
-var tableBody = d3.select("tbody")
+  // d3.select the tableBody
+  var tableBody = d3.select("tbody")
 
-// Create eventHandlers() function
-button.on("click", eventHandler);
-form.on("submit", eventHandler);
+  // Create eventHandlers() function
+  button.on("click", eventHandler);
+  form.on("submit", eventHandler);
 
-// Complete the eventHandler() function 
-function eventHandler() {
+  // Complete the eventHandler() function 
+  function eventHandler() {
 
   // PreventDefault refreshing
   d3.event.preventDefault();
@@ -52,5 +52,5 @@ function eventHandler() {
     newRow.append("td").text(durationMinutes[sighting]);
     newRow.append("td").text(comments[sighting]);
   }
-
+  
 };
